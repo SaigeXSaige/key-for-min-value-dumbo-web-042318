@@ -9,7 +9,7 @@ def key_for_min_value(name_hash)
     values << value
     
     values.each do |a, b|
-       if a < b
+       a < b
       end
         
   end
