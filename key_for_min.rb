@@ -11,18 +11,13 @@ def key_for_min_value(name_hash)
   end
   
   i = 0
-  
+  answer = ""
   while i < values.length 
     if values[i] < values[i + 1]
-      return keys[i]
+       answer << keys[i]
     end
-    
     i += 1
   end
-        
   
-  
- 
-  
- 
+  answer
 end
