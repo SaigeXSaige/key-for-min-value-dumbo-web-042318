@@ -7,6 +7,16 @@ def key_for_min_value(name_hash)
   
   name_hash.each do |key, value|
     values << value
+    keys << key
+  end
+  
+  i = 0
+  
+  while i < values.length 
+    if values[i] < values[i + 1]
+      return keys[i]
+      i += 1
+    end
   end
         
   
