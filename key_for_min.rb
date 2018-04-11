@@ -9,7 +9,7 @@ def key_for_min_value(name_hash)
     values << value
   end
         
-  values.find
+  values.find_i
   
  
   
