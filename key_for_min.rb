@@ -8,5 +8,7 @@ def key_for_min_value(name_hash)
     values << key
   end
   
-  values.
+  values.each do |a,b|
+    if a<=>b
+      return 
 end
