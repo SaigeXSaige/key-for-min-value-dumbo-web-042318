@@ -5,21 +5,23 @@ def key_for_min_value(name_hash)
   values = []
   keys = []
   
-  name_hash.collect do |key, value|
-    values << value
-    keys << key
-  end
-  
-  i = 0
-  
-  while i < values.length 
-    elsif values[i] < values[i + 1]
-       return keys[i]
-    else 
-      return keys[-1]
+  if name_hash.length > 0  
+    name_hash.collect do |key, value|
+      values << value
+      keys << key
     end
-    i += 1
+    
+    i = 0
+    
+    while i < values.length 
+      elsif values[i] < values[i + 1]
+         return keys[i]
+      else 
+        return keys[-1]
+      end
+      i += 1
+    end
+  else
+    return nil
   end
-  
-  answer
 end
