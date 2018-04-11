@@ -9,8 +9,10 @@ def key_for_min_value(name_hash)
     values << value
   end
         
-  values.find_index()
-  
+  i = values.find_index {
+    |a, b| a < b
+  }
+  keys[i]
  
   
  
