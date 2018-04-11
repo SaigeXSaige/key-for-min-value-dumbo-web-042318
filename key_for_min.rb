@@ -12,4 +12,5 @@ def key_for_min_value(name_hash)
     if a<=>b
       return values.first
     end
+  end
 end
