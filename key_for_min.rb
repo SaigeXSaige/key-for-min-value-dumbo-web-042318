@@ -9,8 +9,9 @@ def key_for_min_value(name_hash)
   end
   
   values.collect do |a,b|
-    a<=>b
+    if a<b
+      return a
   end
   
-  values.first
+ 
 end
